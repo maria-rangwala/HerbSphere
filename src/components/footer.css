@@ -1,0 +1,149 @@
+footer {
+  background: #3c341f;
+  color: #3c341f;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: #b2fb51;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #60a704;
+}
+
+.containerF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row-wise {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 97%;
+  border-radius: 30px;
+  background-color: cornsilk;
+}
+
+.clg-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 45%;
+  text-align: center;
+}
+
+.footer-img {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0;
+}
+
+.img-wrapper {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#img1, #img2{
+  width: 150px;
+}
+
+#img3{
+    width: 100px;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: #b2fb51;
+  color: #3c341f;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.quick-link:hover {
+  background-color: #60a704;
+  color: white;
+}
+
+.social-links a {
+  font-size: 20px;
+  margin: 0 8px;
+  color: #3c341f;
+}
+
+.social-links a:hover {
+  color: #60a704;
+}
+
+@media (max-width: 800px) {
+  .containerF {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .row-wise {
+    flex-direction: column;
+  }
+
+  .clg-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .footer-img {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  #copyright {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #img1, #img3 {
+    width: 65px;
+  }
+
+  #img2 {
+    width: 125px;
+  }
+
+  .quick-link {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}

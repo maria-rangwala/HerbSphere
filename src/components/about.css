@@ -1,54 +1,132 @@
-.about-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #3c341f;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #3c341f;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
-.about-container h2{
-    margin-top: 30px;
-    color: cornsilk;
-    font-size: 3em;
-    font-weight: 700;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px 0;
+
+.about-container h2 {
+  margin-top: 30px;
+  color: cornsilk;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 20px 0;
 }
-.about-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 20px;
 }
-.about-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
-.about-container h3{
-    color: #b2fb51;
-    font-size: 2em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-    margin: 20px 0;
-    text-align: center;
+
+.about-container h3 {
+  color: #b2fb51;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 20px 0;
+  text-align: center;
 }
+
 .about-container p {
-    font-size: 1.25em;
-    margin-bottom: 20px;
-    color: #fff;
-    line-height: 1.30em;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    width: 100%;
-    text-align: justify;
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.6em;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  width: 100%;
+  text-align: justify;
 }
+
 .about-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.about-herb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .about-content {
+    width: 90%;
+  }
+
+  .about-container h2 {
+    font-size: 2.5em;
+  }
+
+  .about-container h3 {
+    font-size: 1.8em;
+  }
+
+  .about-container p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    width: 95%;
+    gap: 30px;
+  }
+
+  .about-text{
+    width: 100%;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-container h2 {
+    font-size: 2em;
+  }
+
+  .about-container h3 {
+    font-size: 1.5em;
+  }
+
+  .about-container p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container h2 {
+    font-size: 1.8em;
+  }
+
+  .about-container h3 {
+    font-size: 1.3em;
+  }
+
+  .about-container p {
+    font-size: 0.95em;
+  }
+
+  .about-content {
+    padding: 0 10px;
+  }
 }

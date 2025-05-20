@@ -4,7 +4,7 @@ import Plantlist from './plantlist';
 import About from './about';
 import TeamSection from './team';
 import SearchPlant from './search';
-
+import Footer from './footer';
 
 function Landingpg() {
   const aboutRef = useRef(null);
@@ -56,7 +56,7 @@ function Landingpg() {
       <section className='section'>
         <TeamSection />
       </section>
-      
+      <Footer />
   </div>
   );
 }

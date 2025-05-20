@@ -4,19 +4,26 @@
   position: relative;
   padding: 20px 1rem;
   background-color: cornsilk;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .search-bar-wrapper {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
-  position: relative;
   background: #fff;
   border-radius: 2rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .search-bar {
@@ -31,19 +38,23 @@
 .search-icon {
   margin-left: 1rem;
   color: #888;
+  flex-shrink: 0;
 }
 
 .dropdown-list {
   background-color: white;
   width: 100%;
-  max-width: 800px;
-  justify-items: center;
+  max-width: 100%;
+  margin: 0 auto;
   border-radius: 0 0 10px 10px;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
   position: absolute;
+  top: 100%;
   z-index: 10;
   list-style: none;
   padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .dropdown-list li {
@@ -51,7 +62,11 @@
   cursor: pointer;
   border-bottom: 1px solid #eee;
   transition: background 0.2s;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dropdown-list li:hover {
@@ -80,13 +95,7 @@
   text-align: left;
   animation: zoomIn 0.3s ease;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.search-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .overlay-card h2 {
@@ -118,6 +127,7 @@
   to { transform: scale(1); opacity: 1; }
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .search-bar {
     padding: 0.8rem 1rem;
@@ -127,5 +137,10 @@
   .overlay-card {
     width: 90%;
     padding: 1.5rem;
+  }
+
+  .dropdown-list li {
+    padding: 0.8rem;
+    font-size: 0.95rem;
   }
 }
