@@ -7,14 +7,16 @@ function Plantcard({ plant }) {
   const openOverlay = () => setShowModal(true);
   const closeOverlay = () => setShowModal(false);
   const shortBenefits = plant.medicinalBenefits.slice(0, 100);
+  const cleanImageUrl = plant.imageUrl?.split('&')[0];
 
   return (
   <>
     <div className="plant-container" onClick={openOverlay}>
       <div className="plant-card">
-        <img src={plant.imageUrl} alt={plant.plantName} className="plant-image" />
+        <img src={cleanImageUrl} alt={plant.plantName} className="plant-image" />
         <h2 className="plant-name">{plant.plantName}</h2>
         <p className="plant-part"><strong>Part Used:</strong> {plant.partUsed}</p>
+        <p className="plant-part"><strong>Found in:</strong> {plant.region}</p>
         <p className="plant-benefits">
           <strong>Medicinal Benefits:</strong> {shortBenefits}...
         </p>
@@ -32,6 +34,9 @@ function Plantcard({ plant }) {
             <h2 className="plant-name">{plant.plantName}</h2>
             <p className="plant-part">
               <strong>Part Used:</strong> {plant.partUsed}
+            </p>
+            <p className="plant-part">
+              <strong>Found in:</strong> {plant.region}
             </p>
             <p className="plant-benefits">
               <strong>Medicinal Benefits:</strong> {plant.medicinalBenefits}

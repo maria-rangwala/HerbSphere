@@ -9,7 +9,6 @@ useEffect(() => {
     fetch('https://herbsphere-backend.onrender.com/plant/random')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setPlants(data);
       })
       .catch((err) => console.error('Error fetching data:', err));
