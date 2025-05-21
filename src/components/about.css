@@ -6,10 +6,11 @@
   background-color: #3c341f;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  gap: 20px;
 }
 
 .about-container h2 {
-  margin-top: 30px;
+  margin-top: 25px;
   color: cornsilk;
   font-size: 3em;
   font-weight: 700;
@@ -20,7 +21,7 @@
 
 .about-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -32,7 +33,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
 }
 
 .about-container h3 {
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 .about-herb {
@@ -94,10 +94,6 @@
 
   .about-text{
     width: 100%;
-  }
-
-  .about-img {
-    display: none;
   }
 
   .about-container h2 {

@@ -65,7 +65,7 @@ function SearchPlants() {
             <img src={selectedPlant.imageUrl} alt={selectedPlant.plantName} />
             <h2>{selectedPlant.plantName}</h2>
             <p><strong>Part Used:</strong> {selectedPlant.partUsed}</p>
-            <p><strong>Medicinal Benefits:</strong> {selectedPlant.medicinalBenefits}</p>
+            <p style={{'textAlign':'justify'}}><strong>Medicinal Benefits:</strong> {selectedPlant.medicinalBenefits}</p>
             <button className="close-btn" onClick={() => setShowModal(false)}>Close</button>
           </div>
         </div>

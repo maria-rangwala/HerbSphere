@@ -37,7 +37,7 @@ function Landingpg() {
           <button className='explore-btn' onClick={() => window.open("https://herbsperechatbotremedy.streamlit.app/", "_blank")}>Ask the Chatbot</button>
         </div>
         <div className='hero-image'>
-          <img src="/2.png" alt="Plant Image" className='hero-img'/>
+          <img src="/herbs.png" alt="Plant Image" className='hero-img'/>
         </div>
       </div>
       </div>

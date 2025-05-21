@@ -46,6 +46,7 @@
 .plant-benefits {
   font-size: 0.95rem;
   line-height: 1.4;
+  text-align: justify;
 }
 
 .modal-overlay {
