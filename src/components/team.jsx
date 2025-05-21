@@ -40,7 +40,7 @@ const TeamSection = () => {
         <h2 className="section-title">Meet Team HerbSphere</h2>
         <div className="mentor-card">
           <img
-            src="#"
+            src="/sir.jpg"
             alt="Mentor"
             className="mentor-img"
           />
